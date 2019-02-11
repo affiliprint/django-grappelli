@@ -295,20 +295,31 @@ button.ui-datetime-now {
 
 
 
-/*  ADD ANOTHER
+/*  ADD ANOTHER  / CHANGE / DELETE
 ------------------------------------------------------------------------------------------------------ */
 
-a.add-another {
-    position: relative;
-    display: inline-block;
-    margin-left: 3px;
-    width: 18px;
-    height: 18px;
-    vertical-align: top;
-    font-size: 11px;
-    line-height: 16px;
-    @include icons-sprite(add-another);
+a.grp-add-another {
+    @include icons-small-sprite(tools-related-add-handler);
+    &:not([href]) {
+        @include icons-small-sprite(tools-related-add-handler-disabled);
+        cursor: not-allowed;
+    }
 }
+a.grp-change-related {
+    @include icons-small-sprite(tools-related-edit-handler);
+    &:not([href]) {
+        @include icons-small-sprite(tools-related-edit-handler-disabled);
+        cursor: not-allowed;
+    }
+}
+a.grp-delete-related {
+    @include icons-small-sprite(tools-related-remove-handler);
+    &:not([href]) {
+        @include icons-small-sprite(tools-related-remove-handler-disabled);
+        cursor: not-allowed;
+    }
+}
+
 .grp-row {
     a.add-another {
         top: -7px;
