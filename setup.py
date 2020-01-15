@@ -7,7 +7,7 @@ def read(fname):
 
 setup(
     name='django-grappelli',
-    version='2.12.3',
+    version='2.13.3',
     description='A jazzy skin for the Django Admin-Interface.',
     long_description=read('README.rst'),
     url='http://django-grappelli.readthedocs.org',
@@ -24,14 +24,9 @@ setup(
         'Intended Audience :: Developers',
         'License :: OSI Approved :: BSD License',
         'Operating System :: OS Independent',
-        'Programming Language :: Python',
-        'Programming Language :: Python :: 2',
-        'Programming Language :: Python :: 2.6',
-        'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.1',
-        'Programming Language :: Python :: 3.2',
-        'Programming Language :: Python :: 3.3',
+        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
     ],
     zip_safe=False,
 )
